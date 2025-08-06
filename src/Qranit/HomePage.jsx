@@ -21,6 +21,13 @@ const toggleMedia = () => {
   setIsSenedlerOpen(false); 
 };
 
+ const handleScroll = (e, id) => {
+    e.preventDefault();  
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
     return(
       <>
       <header>
@@ -31,7 +38,7 @@ const toggleMedia = () => {
     </div>
     <nav>
         <ul>
-            <li><a href="#">Ana səhifə</a></li>
+            <li><a href="#" onClick={(e) => handleScroll(e, "AnaSehife")}>Ana səhifə</a></li>
          <li className="dropdown" onClick={toggleSenedler}><a href="#">Senedler</a>
          {isSenedlerOpen && (
          <ul className="dropdown-menu">
@@ -40,7 +47,7 @@ const toggleMedia = () => {
          </ul> 
          )}       
          </li>
-            <li><a href="#">Qrant müsabiqələri</a></li>
+            <li><a href="#" onClick={(e)=>handleScroll(e,"Qrant-müsabiqələri")}> Qrant müsabiqələri</a></li>
             <li className="dropdown" onClick={toggleMedia}><a href="#" >Media</a>
             {isMediaOpen && (
                <ul className="dropdown-menu">

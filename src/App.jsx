@@ -9,6 +9,7 @@ import HomePage from "./Qranit/HomePage";
 import GrantCompetitions from "./Qranit/GrantCompetitions";
 import Media from "./Qranit/Media";
 
+
 function App() {
   return (
     <div>

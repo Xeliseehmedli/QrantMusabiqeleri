@@ -8,7 +8,7 @@ export default function GrantCompetitions(){
 return(
 <>
 <main>
-    <section id="Qrant müsabiqələri">
+    <section id="Qrant-müsabiqələri">
         
       <div><h1 className="main-bar">Xəbərlər və elanlar</h1></div>  
       <div className="news-section">
